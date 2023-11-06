@@ -1,0 +1,151 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .card {
+    width: 360px;
+    height: 582px;
+    perspective: 1000px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  
+  /*.card-front {
+    background: white;
+    font-size: 21px; /* 폰트 사이즈 설정 
+    text-align: center; /* 텍스트 중앙 정렬 
+    line-height: 1.5; /* 행간 설정 (폰트 사이즈의 1.5배) 
+  }*/
+  
+
+  .card-front {
+    background: white;
+  }
+  
+  .card-front-title {
+    margin-top: 30px;
+    font-size: 18px; /* 큰 제목용 폰트 사이즈 */
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 60px; /* 제목과 내용 사이의 여백 */
+  }
+  
+  .card-front-content {
+    font-size: 14px; /* 본문 내용용 폰트 사이즈 */
+    text-align: center;
+    line-height: 1.2;
+    color: #666666;
+    padding: 0 15px; /* 좌우 패딩 */
+  }
+
+  .card-back {
+    background: #333333;
+    transform: rotateY(180deg);
+  }
+
+  .card-back-title {
+    font-size: 24px; /* 큰 제목용 폰트 사이즈 */
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-top: 30%;
+    margin-bottom: 60px; /* 제목과 내용 사이의 여백 */
+  }
+  
+
+  .card-back-content {
+    display: flex;
+    align-items: center; /* 세로 축에서 중앙 정렬 */
+    padding: 15px 40px; /* 좌우 패딩 */
+  }
+  
+  .card-back-content-image {
+    flex-shrink: 0; /* 이미지 크기가 유지되도록 설정 */
+    padding-right: 10px; /* 이미지와 텍스트 사이의 여백 */
+  }
+  
+  .card-back-content-image img {
+    width: 50px; /* 로고 이미지의 폭 */
+    height: auto; /* 로고 이미지의 높이를 자동으로 설정하여 비율 유지 */
+  }
+  
+  .card-back-content-message{
+
+  }
+
+
+  .card-back-content-message-title,
+  .card-back-content-message-text {
+    flex-grow: 1; /* 두 섹션 모두 남은 공간을 균등하게 차지하도록 설정 */
+  }
+
+  .card-back-content-message-title p {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 16px; /* 제목 폰트 크기 */
+    color: #ffffff; /* 제목 폰트 색상 */
+    line-height: 1.6; /* 제목 행간 */
+  }
+
+  .card-back-content-message-text p {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 15px; /* 본문 폰트 크기 */
+    color: #999999; /* 본문 폰트 색상 */
+    line-height: 1.3; /* 본문 행간 */
+  }
+  
+  
+  .text-area {
+    padding: 20px;
+  }
+
+
+  /*
+  .flipped .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .flipped .card-back {
+    transform: rotateY(0deg);
+  }
+  */

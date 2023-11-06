@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>뒤집히는 카드 웹페이지</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    2023년 음악으로 기억하다
+</div>
+
+<div class="card-container">
+
+  <!-- 카드1 --> 
+  <div class="card" onclick="this.classList.toggle('flipped');">
+    <div class="card-front">
+      <!-- 여기에 첫 번째 이미지 삽입 -->
+      <img src="img/1.png" alt="카드 전면" style="width:360px; height:300px;">
+        <div class="card-front-title">
+            "<br>
+            매일 오전 9시<br>
+            아침을 함께 하는 모닝커피 향과<br>
+            너를 기다렸다
+        </div>
+        <div class="card-front-content">
+            여자친구 - 시간을 달려서
+        </div>
+      </div>
+    <div class="card-back">
+      <div class="card-back-title">
+        실시간 조회 Top3 종목
+      </div>
+      <!--종목1-->
+      <div class="card-back-content">
+         <div class="card-back-content-image">
+           <img src="img/ci1.png" alt="Company Logo" />
+         </div>
+         <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>하이닉스</p>
+              </div>
+              <div class="card-back-content-message-text">
+                 <p>삼성전자와의 쌍두마차,대한민국을 이끈다는
+                  강한 믿음이었을까?</p>
+            </div>
+         </div>
+      </div>
+      <!--종목2-->
+      <div class="card-back-content">
+        <div class="card-back-content-image">
+          <img src="img/ci2.png" alt="Company Logo" />
+        </div>
+        <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>현대차</p>
+              </div>
+              <div class="card-back-content-message-text">
+                <p>대한민국의 경제 성장의 엔진,
+                    현대차가 없다면 9시도 없었을 것이다</p>
+            </div>
+         </div>
+     </div>
+      <!--종목3-->
+      <div class="card-back-content">
+        <div class="card-back-content-image">
+          <img src="img/ci3.png" alt="Company Logo" />
+        </div>
+        <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>카카오</p>
+              </div>
+              <div class="card-back-content-message-text">
+                <p>MZ들에게 가장 사랑 받은 종목,
+                    내년에도 귀추가 주목된다</p>
+            </div>
+         </div>
+     </div>
+    </div>
+  </div>
+
+  <!-- 카드2 --> 
+  <div class="card" onclick="this.classList.toggle('flipped');">
+    <div class="card-front">
+      <!-- 여기에 첫 번째 이미지 삽입 -->
+      <img src="img/1.png" alt="카드 전면" style="width:360px; height:300px;">
+        <div class="card-front-title">
+            "<br>
+            매일 오전 9시<br>
+            아침을 함께 하는 모닝커피 향과<br>
+            너를 기다렸다
+        </div>
+        <div class="card-front-content">
+            여자친구 - 시간을 달려서
+        </div>
+      </div>
+    <div class="card-back">
+      <div class="card-back-title">
+        실시간 조회 Top3 종목
+      </div>
+      <!--종목1-->
+      <div class="card-back-content">
+         <div class="card-back-content-image">
+           <img src="img/ci1.png" alt="Company Logo" />
+         </div>
+         <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>하이닉스</p>
+              </div>
+              <div class="card-back-content-message-text">
+                 <p>삼성전자와의 쌍두마차,대한민국을 이끈다는
+                  강한 믿음이었을까?</p>
+            </div>
+         </div>
+      </div>
+      <!--종목2-->
+      <div class="card-back-content">
+        <div class="card-back-content-image">
+          <img src="img/ci2.png" alt="Company Logo" />
+        </div>
+        <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>현대차</p>
+              </div>
+              <div class="card-back-content-message-text">
+                <p>대한민국의 경제 성장의 엔진,
+                    현대차가 없다면 9시도 없었을 것이다</p>
+            </div>
+         </div>
+     </div>
+      <!--종목3-->
+      <div class="card-back-content">
+        <div class="card-back-content-image">
+          <img src="img/ci3.png" alt="Company Logo" />
+        </div>
+        <div class="card-back-content-message">
+            <div class="card-back-content-message-title">
+                <p>카카오</p>
+              </div>
+              <div class="card-back-content-message-text">
+                <p>MZ들에게 가장 사랑 받은 종목,
+                    내년에도 귀추가 주목된다</p>
+            </div>
+         </div>
+     </div>
+    </div>
+  </div>
+  <button id="shareButton">공유하기</button>
+</div>
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
